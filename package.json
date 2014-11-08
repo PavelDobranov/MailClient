@@ -1,0 +1,21 @@
+{
+  "name": "MailClient",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PavelDobranov/MailClient.git"
+  },
+  "author": "Pavel Dobranov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PavelDobranov/MailClient/issues"
+  },
+  "homepage": "https://github.com/PavelDobranov/MailClient",
+  "dependencies": {
+    "express": "^4.10.1",
+    "jade": "^1.7.0",
+    "serve-favicon": "^2.1.6"
+  }
+}

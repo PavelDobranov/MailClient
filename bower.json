@@ -1,0 +1,22 @@
+{
+  "name": "MailClient",
+  "version": "0.0.1",
+  "homepage": "https://github.com/PavelDobranov/MailClient",
+  "authors": [
+    "Pavel Dobranov <pdobranov@gmail.com>"
+  ],
+  "description": "AngularJS Application",
+  "main": "server.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.2",
+    "foundation": "~5.4.7"
+  }
+}
