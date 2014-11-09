@@ -1,9 +1,10 @@
 doctype html
-html
-  head(ng-app="MailClient")
+html(ng-app="MailClient")
+  head
     title Mail Client
     link(rel="stylesheet" href="/lib/foundation/css/foundation.css")
     link(rel="stylesheet" href="/css/app.css")
   body
-    div Hi From Jade!
+    include ./includes/nav
+    div(ng-view)
     include ./includes/scripts
