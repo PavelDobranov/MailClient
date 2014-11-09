@@ -2,5 +2,9 @@
 
 angular.module('MailClient')
   .controller('SettingsController', ['$scope', function($scope) {
-    $scope.message = 'Hi From Sttings';
+    $scope.updateSettings = updateSettings;
+
+    function updateSettings(settings) {
+      console.log(settings);
+    }
   }]);
