@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('MailClient', ['ngRoute'])
+angular.module('MailClient', ['ngRoute', 'ngAnimate'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/home', {

@@ -1,1 +1,24 @@
-div {{ message }}
+.row
+  form(name="settingsForm", novalidate, ng-submit="updateSettings(settings)")
+    fieldset
+      legend User Settings
+      .row
+        .small-12.columns
+          label Username
+            input.radius.error(type="text", name="username", placeholder="Username", ng-blur="validateUsername=true", ng-focus="validateUsername=false", ng-minlength=3, ng-maxlength=12, ng-model="settings.username", required)
+          small.error(ng-show="validateUsername && settingsForm.username.$error.required") Username is required!
+          small.error(ng-show="validateUsername && settingsForm.username.$error.minlength") Username must be greater than 3 characters!
+          small.error(ng-show="validateUsername && settingsForm.username.$error.maxlength") Username cannot be greater than 12 characters!
+      .row
+        .small-12.columns
+          label Email
+            input.radius.error(type="email", name="email", placeholder="Email", ng-blur="validateEmail=true", ng-focus="validateEmail=false", ng-model="settings.email")
+          small.error(ng-show="validateEmail && settingsForm.email.$invalid") Invalid email address!
+      .row
+        .small-12.columns
+          label Age
+            input.radius.error(type="number", name="age", placeholder="Age", ng-blur="validateAge=true", ng-focus="validateAge=false", ng-model="settings.age")
+          small.error(ng-show="validateAge && settingsForm.age.$invalid") Invalid age!
+      .row
+        .small-12.columns
+          button.button.radius.success.right(type="submit" ng-disabled="settingsForm.$invalid") Update

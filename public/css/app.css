@@ -2,3 +2,29 @@
   max-width: 100%;
   max-height: 100%;
 }
+/*settings form*/
+/*input.ng-pristine {
+  border: 1px solid green
+}
+input.ng-dirty {
+  border: 1px solid yellow
+}*/
+
+input.ng-invalid.ng-dirty {
+  border: 1px solid red
+}
+input.ng-valid.ng-dirty {
+  border: 1px solid green
+}
+.error {
+  -webkit-transition-delay: 2s;
+  /* Safari */
+  
+  transition-delay: 2s;
+  -webkit-transition: all linear 1s;
+  transition: all linear 1s;
+}
+.error.ng-hide {
+  opacity: 0;
+}
+/*settings form*/
